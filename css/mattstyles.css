@@ -1,0 +1,158 @@
+/* Matt Moore's Killer Styles */
+
+.wrapper {
+	width: 500px;
+	margin: 20px auto;
+}
+
+.group {
+	margin-top: 40px;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 5px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.form-control {
+	display: block;
+	height: 49px;
+	width: 100%;
+	padding: 0 0 0 14px;
+	margin: 0 0 8px 0;
+	border: 1px solid #b6b6b6;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	font-size: 14px;
+	color: #000;
+}
+
+.form-control:focus {
+	border-color: #00bad8;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,186,216,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,186,216,.6);
+}
+
+.form-disabled {
+	background-color: #eee;
+}
+
+.form-signature {
+	height: 59px;
+	width: 342px;
+	font-size: 16px;
+	background-image: url(img/bgSignature.png) left top no-repeat;
+}
+
+.has-error {
+	border-color: #f32f00;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(243,47,0,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(243,47,0,.6);
+}
+
+.btn {
+	height: 49px;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	color: #fff;
+	border: 1px solid #b6b6b6;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 0;
+}
+
+.btn-default, .btn-default:hover, .btn-default:active, .btn-default:focus {
+	color: #333;
+	background-color: #fff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn-primary {
+	background: -webkit-linear-gradient(top, #2ec8e3, #14a5bf);
+	border: none;
+	border-radius: 5px;
+	padding: 6px 24px;
+}
+
+	.btn-primary:hover {
+		background: -webkit-linear-gradient(top, #1fb6d0, #098fa7);
+	}
+
+	.btn-primary:active {
+		-webkit-box-shadow: inset 0 5px 10px rgba(0,0,0,.15);
+		box-shadow: inset 0 5px 10px rgba(0,0,0,.15);		
+		background: -webkit-linear-gradient(top, #1fb6d0, #098fa7);
+	}
+
+.btn-group.open .dropdown-toggle {
+	color: #333;
+	background-color: #fff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	list-style: none;
+	font-size: 14px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 4px;
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	background-clip: padding-box;
+}
+
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.scrollable-textbox {
+	height: 240px;
+	width: 342px;
+	padding: 12px 24px;
+	border: 1px solid #ccc;
+	overflow: auto;
+	font-size: 12px;
+}
+
+
