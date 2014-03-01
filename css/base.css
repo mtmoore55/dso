@@ -693,7 +693,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .logo-dark, .logo-light {
-        background-image: url(//d1a3f4spazzrp4.cloudfront.net/uber-style/logo-md@2x.png)
+        background-image: url(//d1a3f4spazzrp4.cloudfront.net/uber-style/logo-md@2x.png);
    }
 }
 .logo-dark {
