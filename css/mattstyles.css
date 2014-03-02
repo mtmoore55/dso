@@ -21,7 +21,7 @@
 }
 
 .form-group {
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 .header {
@@ -52,8 +52,18 @@
 		text-decoration: none;
 	}
 
+	.header ul {
+		padding-top: 2px;
+	}
+
 	.header li {
 		display: inline-block;
+		margin-right: 18px;
+		vertical-align: middle;
+	}
+
+	.header li span {
+		font-size: 22px;
 	}
 
 label {
@@ -259,5 +269,117 @@ a {
 a:hover, a:focus {
     color: #20748b;
     text-decoration: underline;
+}
+
+.checklist {
+	background: #e3e3e3;
+}
+	
+	.checklist ul {
+		padding: 20px;
+		width: 247px;
+	}
+
+	.checklist li {
+		list-style-type: none;
+		font-size: 14px;
+		border-bottom: 1px solid #bac5bd;
+		border-right: 1px solid #bac5bd;
+	}
+
+		.checklist li:first-child {
+			border-top: 1px solid #bac5bd;
+		}
+
+			.checklist li span {
+				font-size: 27px;
+				position: absolute;
+				margin-left: -38px;
+				margin-top: -3px;
+			}
+
+		.checklist li.complete {
+			background: #e9f7eb;
+			color: #666666;
+		}
+
+			.checklist li.complete span {
+				color: #3cb549;
+			}
+
+		.checklist li.current {
+			background: #f5f5f5;
+			color: #000;
+			padding: 16px 0 16px 50px;
+			border-right: none;
+		}
+
+			.checklist li.current span {
+				color: #000;
+			}
+
+		.checklist li.incomplete {
+			background: #e3f7fa;
+			color: #666;
+		}
+
+			.checklist li.incomplete span {
+				color: #666;
+			}
+
+	.checklist a {
+		text-decoration: none;
+		color: inherit;
+		display: block;
+		padding: 16px 0 16px 50px;
+	}
+
+/* Icon Font Styles */
+
+@font-face {
+	font-family: 'dso-icons';
+	src:url('../fonts/dso-icons.eot?89n764');
+	src:url('../fonts/dso-icons.eot?#iefix89n764') format('embedded-opentype'),
+		url('../fonts/dso-icons.woff?89n764') format('woff'),
+		url('../fonts/dso-icons.ttf?89n764') format('truetype'),
+		url('../fonts/dso-icons.svg?89n764#dso-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'dso-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-video:before {
+	content: "\e600";
+}
+.icon-vehicle:before {
+	content: "\e601";
+}
+.icon-support:before {
+	content: "\e602";
+}
+.icon-documents:before {
+	content: "\e603";
+}
+.icon-complete:before {
+	content: "\e604";
+}
+.icon-background:before {
+	content: "\e605";
+}
+.icon-add:before {
+	content: "\e606";
 }
 
