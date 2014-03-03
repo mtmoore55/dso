@@ -25,127 +25,166 @@
      		<div class="header">
      			<div class="uber-logo logo-light pull-left"></div>
      			<ul class="pull-right">
-     				<li><a href="#" class="arrow">John West</a></li>
-     				<li><a href="#"><span class="icon-support"></span></a></li>
+     				<li><a href="#" class="arrow" data-dropdown="#dropdown-user">John West</a></li>
+     				<li><a href="#" data-dropdown="#dropdown-support"><span class="icon-support"></span></a></li>
      			</ul>
+          <div class="clearfix"></div>
      		</div><!-- End Header -->
 
 
       <!-- Start Field with Label -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Default with Label
             </div>
-            <div class="form-group col-xs-8">
+            <div class="form-group col-xs-4">
               <label for="formfield">Form Label</label>
               <input type="text" class="form-control" id="formfield" placeholder="Placeholder">
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Field with Label -->
 
 
       <!-- Start Default Field -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Default
             </div>
-            <div class="form-group col-xs-8">
+            <div class="form-group col-xs-4">
               <input type="text" class="form-control" id="formfield" placeholder="Inner Label Goes Here">
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Default Field -->
 
 
       <!-- Start Disabled Field -->
         <div class="row"> 
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Disabled
             </div>
-            <div class="form-group col-xs-8">     
+            <div class="form-group col-xs-4">     
               <input type="text" class="form-control form-disabled" id="formfield" placeholder="Disabled" disabled>
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Disabled Field -->
       
 
       <!-- Start Field with Error -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Error
             </div>
-            <div class="form-group col-xs-8">     
+            <div class="col-xs-4 form-group">     
               <input type="text" class="form-control has-error" id="formfield has-error" placeholder="Field with an Error">
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Field with Error -->
+
+
+      <!-- Start Helper Text -->
+        <div class="row" style="height:100%;">
+            <div class="col-xs-2 title">
+              Default
+            </div>
+            <div class="form-group col-xs-4">
+              <input type="text" class="form-control" id="formfield" placeholder="Sample">
+              <input type="text" class="form-control" id="formfield" placeholder="Sample">
+              <input type="text" class="form-control" id="formfield" placeholder="Sample">
+              <input type="text" class="form-control" id="formfield" placeholder="Sample">
+            </div>
+            <div class="form-group col-xs-4 helper-container">
+              <span class="helper-text">Helper Text Goes Here</span>
+            </div>
+            <div class="clearfix"></div>
+        </div><!-- End Helper Text -->
 
 
       <!-- Start Dropdown -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Dropdown
             </div>
-            <div class="form-group col-xs-8">   
-              <div class="btn-group dropdown">
-                <button id="drop1" type="button" class="btn-dropdown dropdown-toggle" data-toggle="dropdown" data-target="#">Default <span class="caret"></span></button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                  <li><a href="#">Option 1</a></li>
-                  <li><a href="#">Option 2</a></li>
-                  <li><a href="#">Option 3</a></li>
-                </ul>
-              </div>
+            <div class="form-group col-xs-4">   
+              <button class="btn-dropdown" data-dropdown="#dropdown-1">Default <span class="caret"></span></button>
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Dropdown -->
       
 
       <!-- Start Radios -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Radios
             </div>
-            <div class="form-group col-xs-8">     
+            <div class="form-group col-xs-4">     
               <input type="radio" name="radio" value="option1"> Option 1<br/>
               <input type="radio" name="radio" value="option2"> Option 2
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Radios -->
       
 
       <!-- Start Checkboxes -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Checkboxes
             </div>
-            <div class="form-group col-xs-8">     
+            <div class="form-group col-xs-4">     
               <input type="checkbox" name="radio" value="option1"> Option 1<br/>
               <input type="checkbox" name="radio" value="option2"> Option 2
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Checkboxes -->
       
 
       <!-- Start Primary Button -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Primary Button
             </div>
-            <div class="form-group col-xs-8">     
+            <div class="form-group col-xs-4">     
               <button type="button" class="btn btn-primary">Primary Button</button>
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Primary Button -->
       
 
       <!-- Start Inactive Button -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Inactive Button
             </div>
-            <div class="form-group col-xs-8">     
+            <div class="form-group col-xs-4">     
               <button type="button" class="btn btn-disabled" disabled>Inactive Button</button>
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Inactive Button -->
       
 
       <!-- Start Scrollable Text Box -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Scrollable Text Box
             </div>
-            <div class="form-group col-xs-8">     
+            <div class="form-group col-xs-9">     
               <div class="scrollable-textbox">
                 <p>Rasier, LLC, the entity that contracts with drivers who provide peer-to-peer transportation requested through the Uber app, is committed to safety. As part of that commitment, Rasier uses a third-party vendor to conduct a criminal background check, motor vehicle record check, and other checks. Please review the below disclosure/authorization and release.</p>
                 <p>DISCLOSURE/AUTHORIZATION AND RELEASE FOR THE PROCUREMENT OF A CONSUMER AND/OR INVESTIGATIVE CONSUMER REPORT</p>
@@ -153,27 +192,29 @@
                 <p>Rasier, LLC (“Rasier”) may now, or at any time while you are an independent transportation provider (“Transportation Provider”), with an independent contractor relationship (“I/C Relationship”) with Rasier, verify information within your proposal to enter into or maintain an I/C Relationship, resume or contract by obtaining a consumer report and/or investigative consumer report from a consumer reporting agency. The verifications and/or checks may include but are not limited to: driving records, workers compensation records (in compliance with the ADA or other applicable law), credit bureau files, employment references, personal references, any educational and licensing institution records, and any criminal records information pertaining to you which may be in the files of any federal, state or local criminal justice agency in any state. These reports may include information as to your general reputation, character, personal characteristics, or mode of living. You have the right to request, in writing, the nature and scope of any investigative consumer report conducted by Hirease, Inc. on behalf of Rasier, at: Hirease, Inc., PO Box 2559, Southern Pines, NC 28388 • 1-866-693-1764 • www.hirease.com.</p>
               </div>
             </div>
+            <div class="clearfix"></div>
         </div><!-- End Scrollable Text Box -->
 
 
       <!-- Start Signature Text Field -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Signature
             </div>
-            <div class="form-group col-xs-8">  
+            <div class="form-group col-xs-9">  
               <label for="formfield">Provide your Electronic Signature</label>    
               <input type="text" class="form-control form-signature" id="formfield" placeholder="Type Your Full Name Here">
             </div>
+            <div class="clearfix"></div>
         </div><!-- End Signature Text Field -->
       
 
       <!-- Start Text Styles -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Text
             </div>
-            <div class="form-group col-xs-8">  
+            <div class="form-group col-xs-4">  
               <h1>Header 1</h1>
               <h2>Header 2</h2>
               <h3>Header 3</h3>
@@ -183,15 +224,18 @@
               <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
               <p><a href="#">Link Goes Here</a></p>
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Text Styles -->
       
 
       <!-- Start Error Messaging -->
         <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Error Messaging
             </div>
-            <div class="form-group col-xs-8">  
+            <div class="form-group col-xs-4">  
               <div class="error-messaging">
                 Please correct the following before continuing:
                 <ul>
@@ -200,15 +244,18 @@
                 </ul>
               </div>
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
         </div><!-- End Error Messaging -->
 
 
         <!-- Start Checklist -->
           <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Checklist
             </div>
-            <div class="form-group col-xs-8">
+            <div class="form-group col-xs-4">
               <div class="checklist">
                 <ul>
                   <li class="complete"><a href="#"><span class="icon-complete"></span>Background Check</a></li>
@@ -218,15 +265,18 @@
                 </ul>
               </div>
             </div>
+            <div class="col-xs-4 form-group helper-container">
+            </div>
+            <div class="clearfix"></div>
           </div><!-- End Checklist -->
 
 
         <!-- Start Progress -->
           <div class="row">
-            <div class="col-xs-3 title">
+            <div class="col-xs-2 title">
               Progress Bar
             </div>
-            <div class="form-group col-xs-8">
+            <div class="form-group col-xs-4">
               <div class="progress">
                 <h4>Profile Completeness</h4>
                 <div class="meter">
@@ -235,9 +285,35 @@
                 <p>25% Complete</p>
               </div>
             </div>
+            <div class="clearfix"></div>
           </div><!-- End Progress -->
 
     </div><!-- End Container -->
+
+    <div id="dropdown-user" class="dropdown dropdown-tip">
+      <ul class="dropdown-menu">
+          <li><a href="#">Sign Out</a></li>
+      </ul>
+    </div>
+
+    <div id="dropdown-support" class="dropdown dropdown-tip">
+      <ul class="dropdown-panel" style="right: 285px; position: relative; width: 300px;">
+          <p><strong>Need help from our team?</strong></p>
+          <p>You can email us at</p>
+          <p class="large"><a href="#">partnerssf@uber.com</a></p>
+          <div class="dropdown-divider"></div>
+          <p><strong>Need to leave before you’re finished?</strong></p>
+          <p>We’ve emailed you a link to return to this checklist in the future.</p>
+      </ul>
+    </div>
+
+    <div id="dropdown-1" class="dropdown">
+      <ul class="dropdown-menu">
+          <li><a href="#1">Item 1</a></li>
+          <li><a href="#2">Item 2</a></li>
+          <li><a href="#3">Item 3</a></li>
+      </ul>
+    </div>
 
    </body>
 
