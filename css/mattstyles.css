@@ -60,7 +60,7 @@
 	   }
 	}
 
-	.header a, .header a:hover {
+	.header a, .header a:hover, .header a:active, .header a:visited, .header a:focus {
 		color: #fff;
 		text-decoration: none;
 	}
